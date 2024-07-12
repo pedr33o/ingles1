@@ -1,0 +1,229 @@
+/* Reset básico e estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #314e74;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+section {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+section p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos específicos para as seções */
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-description {
+    flex: 1;
+    padding-right: 20px;
+}
+
+/* Estilos para a seção de tourist spots */
+#tourist-spots {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.turismo {
+    max-width: 100%;
+}
+
+.turismo h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.tourist-spots-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.tourist-spots-list li {
+    flex: 1 1 250px;
+    max-width: 250px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+/* Estilos para vídeos responsivos */
+.video-wrapper {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* Proporção 16:9 para vídeos responsivos */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 8px;
+}
+/* Estilos para as seções de informações do país */
+section#historia, 
+section#culture, 
+section#tourist-spots,
+section#curiosities,
+section#travel-info {
+    background-color: #f9f9f9;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section#historia h2,
+section#culture h2,
+section#tourist-spots h2,
+section#curiosities h2,
+section#travel-info h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #314e74; /* Cor do título */
+    text-align: center;
+}
+
+section#historia p,
+section#culture p,
+section#tourist-spots p,
+section#curiosities p,
+section#travel-info p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #333; /* Cor do texto */
+}
+
+section#historia ul,
+section#culture ul,
+section#tourist-spots ul,
+section#curiosities ul,
+section#travel-info ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 15px;
+}
+
+section#historia ul li,
+section#culture ul li,
+section#tourist-spots ul li,
+section#curiosities ul li,
+section#travel-info ul li {
+    margin-bottom: 10px;
+}
+
+.section-title {
+    font-size: 1.8em;
+    color: #333; /* Cor do título da seção */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-content img {
+    width: 100%;
+    max-width: 400px; /* Largura máxima da imagem */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
